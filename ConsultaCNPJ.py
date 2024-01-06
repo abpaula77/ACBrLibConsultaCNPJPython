@@ -1,25 +1,17 @@
 import ctypes
-from PIL import Image
-
+print("início do exemplo")
 # Carregando a DLL ACBrLibConsultaCNPJ
-acbr_lib = ctypes.cdll.LoadLibrary(r'D:\ACBrLibConsultaCNPJ\ACBrConsultaCNPJ64.dll')
-
-inicializa = acbr_lib.CNPJ_Inicializar(r'D:\ACBrLibConsultaCNPJ\ACBrConsultaCNPJ.INI'.encode("utf-8"),"".encode("utf-8"))
-
-retorno = acbr_lib.CNPJ_ConsultarCaptcha(r'D:\ACBrLibConsultaCNPJ'.encode("utf-8"),"".encode("utf-8"),"".encode("utf-8"))
-
-img = Image.open("CaptchaCNPJ.png")
-img.show()
-
-eCAPCHA = input('Digite o captcha:')
-
+acbr_lib = ctypes.cdll.LoadLibrary(r'C:\ACBrLibConsultaCNPJPython\ACBrConsultaCNPJ64.dll')
+print("dll carregada")
+inicializa = acbr_lib.CNPJ_Inicializar(r'C:\ACBrLibConsultaCNPJPython\ACBrConsultaCNPJ.INI'.encode("utf-8"),"".encode("utf-8"))
+print("dll inicializada")
 sResposta = r"".encode("utf-8")
 
 Tamanho = 0
 
 # Realizando a consulta do CNPJ
-resultado = acbr_lib.CNPJ_Consultar(r'18760540000139'.encode("utf-8"), 
-                                    eCAPCHA.encode("utf-8"), 
+resultado = acbr_lib.CNPJ_Consultar(r'18.760.540/0001-39'.encode("utf-8"), 
+                                    2,
                                     sResposta,
                                     Tamanho)
 
