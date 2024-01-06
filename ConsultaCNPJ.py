@@ -3,8 +3,9 @@ print("início do exemplo")
 # Carregando a DLL ACBrLibConsultaCNPJ
 acbr_lib = ctypes.cdll.LoadLibrary(r'C:\ACBrLibConsultaCNPJPython\ACBrConsultaCNPJ64.dll')
 print("dll carregada")
+print(acbr_lib)
 inicializa = acbr_lib.CNPJ_Inicializar(r'C:\ACBrLibConsultaCNPJPython\ACBrConsultaCNPJ.INI'.encode("utf-8"),"".encode("utf-8"))
-print("dll inicializada")
+print(inicializa)
 sResposta = r"".encode("utf-8")
 
 Tamanho = 0
