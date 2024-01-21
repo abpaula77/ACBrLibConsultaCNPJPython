@@ -1,23 +1,32 @@
 import ctypes
 print("início do exemplo")
 # Carregando a DLL ACBrLibConsultaCNPJ
-acbr_lib = ctypes.cdll.LoadLibrary(r'C:\ACBrLibConsultaCNPJPython\ACBrConsultaCNPJ64.dll')
+acbr_lib = ctypes.WinDLL(r'C:\ACBrLibConsultaCNPJPython\ACBrConsultaCNPJ64.dll')
 print("dll carregada")
-print(acbr_lib)
 inicializa = acbr_lib.CNPJ_Inicializar(r'C:\ACBrLibConsultaCNPJPython\ACBrConsultaCNPJ.INI'.encode("utf-8"),"".encode("utf-8"))
 print(inicializa)
-sResposta = r"".encode("utf-8")
 
-Tamanho = 0
+sResposta = saida = ctypes.create_string_buffer(256)
+Tamanho = ctypes.c_int()
 
 # Realizando a consulta do CNPJ
-resultado = acbr_lib.CNPJ_Consultar(r'18.760.540/0001-39'.encode("utf-8"), 
-                                    2,
-                                    sResposta,
-                                    Tamanho)
-
+# 65708551000150
+# 18760540000139
+resultado = acbr_lib.CNPJ_Versao(sResposta,Tamanho)
+print('Resultado')
 print(resultado)
-print(sResposta.decode("utf-8"))
+print(Tamanho)
+print(sResposta.value.decode('utf-8'))
+
+# CNPJ = r'"65708551000150"'.encode("utf-8")
+
+# resultado = acbr_lib.CNPJ_Consultar(CNPJ, 
+#                                     2,
+#                                     sResposta,
+#                                     Tamanho)
+
+# print(resultado)
+# print(sResposta.decode("utf-8"))
 
 if resultado == 0:
     resultado = acbr_lib.CNPJ_UltimoRetorno( sResposta,
