@@ -9,11 +9,11 @@ acbr_lib.CNPJ_Consultar.argtypes = (ctypes.c_char_p, ctypes.c_int, ctypes.c_char
 acbr_lib.CNPJ_Consultar.restype = ctypes.c_int
 
 # Definir variáveis para armazenar os resultados
-sResposta = ctypes.create_string_buffer(2000)  # Substitua 256 pelo tamanho máximo esperado da string
+sResposta = ctypes.create_string_buffer(256)  # Substitua 256 pelo tamanho máximo esperado da string
 esTamanho = ctypes.c_int()
 
 # Definir o valor do CNPJ como uma string
-cnpj_valor = "18760540000139"
+cnpj_valor = "27329866000105"
 
 # Criar um buffer de string com espaço suficiente
 sCNPJ = ctypes.create_string_buffer(15)  # +1 para o caractere nulo de terminação
@@ -22,7 +22,7 @@ sCNPJ = ctypes.create_string_buffer(15)  # +1 para o caractere nulo de terminaç
 ctypes.memmove(sCNPJ, cnpj_valor.encode('utf-8'), len(cnpj_valor))
 
 # Chamar a função CNPJ_Versao
-resultado = acbr_lib.CNPJ_Consultar(sCNPJ,1,sResposta,ctypes.byref(esTamanho))
+resultado = acbr_lib.CNPJ_Consultar(sCNPJ,2,sResposta,ctypes.byref(esTamanho))
 #resultado = acbr_lib.CNPJ_Nome(sVersao, ctypes.byref(esTamanho))
 
 # Verificar o resultado

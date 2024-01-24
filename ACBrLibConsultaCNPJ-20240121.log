@@ -1,0 +1,34 @@
+21/01/24 15:10:38:237 - TLibConsultaCNPJConfig.AplicarConfiguracoes: C:\ACBrLibConsultaCNPJPython\ACBrConsultaCNPJ.INI
+21/01/24 15:10:38:240 - TLibConsultaCNPJConfig.Gravar: C:\ACBrLibConsultaCNPJPython\ACBrConsultaCNPJ.INI
+21/01/24 15:10:38:251 - TLibConsultaCNPJConfig.Gravar - Feito
+21/01/24 15:10:38:254 - TLibConsultaCNPJConfig.AplicarConfiguracoes - Feito
+21/01/24 15:10:38:258 - TLibConsultaCNPJConfig.Ler - Feito
+21/01/24 15:10:38:262 - LIB_Inicializar( C:\ACBrLibConsultaCNPJPython\ACBrConsultaCNPJ.INI,  )
+21/01/24 15:10:38:264 -    ACBrLibConsultaCNPJ - 0.0.0.40
+21/01/24 15:10:38:268 - CNPJ_Consultar ( 27329866000105,2 )
+21/01/24 15:10:38:269 - Travar
+21/01/24 15:10:38:926 - Destravar
+21/01/24 15:10:38:929 -    MoverStringParaPChar. StrLen:392, BufLen:0
+21/01/24 15:10:38:931 -    SetRetorno(0, )
+21/01/24 15:10:38:933 - LIB_UltimoRetorno
+21/01/24 15:10:38:935 -    MoverStringParaPChar. StrLen:0, BufLen:392
+21/01/24 15:10:38:937 -    Codigo:0, Mensagem:
+21/01/24 15:10:38:939 - LIB_Finalizar
+21/01/24 15:10:38:941 - Finalizar
+21/01/24 15:14:39:803 - TLibConsultaCNPJConfig.AplicarConfiguracoes: C:\ACBrLibConsultaCNPJPython\ACBrConsultaCNPJ.INI
+21/01/24 15:14:39:805 - TLibConsultaCNPJConfig.Gravar: C:\ACBrLibConsultaCNPJPython\ACBrConsultaCNPJ.INI
+21/01/24 15:14:39:821 - TLibConsultaCNPJConfig.Gravar - Feito
+21/01/24 15:14:39:824 - TLibConsultaCNPJConfig.AplicarConfiguracoes - Feito
+21/01/24 15:14:39:827 - TLibConsultaCNPJConfig.Ler - Feito
+21/01/24 15:14:39:829 - LIB_Inicializar( C:\ACBrLibConsultaCNPJPython\ACBrConsultaCNPJ.INI,  )
+21/01/24 15:14:39:832 -    ACBrLibConsultaCNPJ - 0.0.0.40
+21/01/24 15:14:39:836 - CNPJ_Consultar ( 27329866000105,2 )
+21/01/24 15:14:39:839 - Travar
+21/01/24 15:14:40:479 - Destravar
+21/01/24 15:14:40:482 -    MoverStringParaPChar. StrLen:392, BufLen:0
+21/01/24 15:14:40:485 -    SetRetorno(0, )
+21/01/24 15:14:40:488 - LIB_UltimoRetorno
+21/01/24 15:14:40:490 -    MoverStringParaPChar. StrLen:0, BufLen:392
+21/01/24 15:14:40:492 -    Codigo:0, Mensagem:
+21/01/24 15:14:40:494 - LIB_Finalizar
+21/01/24 15:14:40:496 - Finalizar
