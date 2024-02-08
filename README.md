@@ -8,5 +8,9 @@ Os fontes do ACBr podem ser encontrados em http://svn.code.sf.net/p/acbr/code/tr
 
 A documentação da ACBrLib pode ser encontrada em https://acbr.sourceforge.io/ACBrLib/ACBrLibConsultaCNPJ.html
 
-Programa exemplo ainda em desenvolvimento. Não está 100% funcional.
+Programa exemplo de uso da ACBrLibConsultaCNPJ.
+
+Utilizada Lib Cdecl / 64bits / Windows
+
+Agradecimentos a escuta de Renato Rubinho que apesar de não contribuir escutou e proporcionou a solução do problema.
 
